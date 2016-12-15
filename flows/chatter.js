@@ -6,8 +6,6 @@ const twss = require('twss')
 
 module.exports = (slapp) => {
 
-  const reactionRegExp = new RegExp(Object.keys(reactions).join("|"),"gi")
-
   slapp.message('.*', (msg) => {
 
     if(twss.is(msg.body.event.text)) {
