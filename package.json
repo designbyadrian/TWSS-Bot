@@ -1,0 +1,21 @@
+{
+  "name": "twssbot",
+  "version": "0.0.1",
+  "description": "Slackbot that responds with the \"That's what she said!\" joke whenever it can.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adrian von Gegerfelt",
+  "license": "MIT",
+  "dependencies": {
+    "beepboop-slapp-presence-polyfill": "^1.1.1",
+    "express": "^4.14.0",
+    "request": "^2.74.0",
+    "slapp": "^1.0.4",
+    "slapp-context-beepboop": "^1.0.0",
+    "slapp-convo-beepboop": "^1.0.0",
+    "striptags": "^2.1.1",
+    "twss": "^0.1.6"
+  }
+}

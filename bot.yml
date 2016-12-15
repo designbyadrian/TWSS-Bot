@@ -1,0 +1,12 @@
+name: TWSS Bot
+description: Slackbot that responds with the "That's what she said!" joke whenever it can
+email: adrian@designbyadrian.com
+avatar: img/icon.png
+background: img/background.gif
+screenshots:
+  - screenshot: img/screenshot1.png
+slackscopes:
+  - bot
+  - commands
+  - channels:read
+  - chat:write:bot
