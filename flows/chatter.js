@@ -6,9 +6,12 @@ const twss = require('twss')
 
 module.exports = (slapp) => {
 
-  twss.threshold = 0.6;
+  twss.threshold = 0.7;
 
   slapp.message('.*', (msg) => {
+
+    console.log(twss.is(msg.body.event.text));
+    console.log(twss.prob(msg.body.event.text));
 
     if(twss.is(msg.body.event.text)) {
       msg.say("That's what she said!");
