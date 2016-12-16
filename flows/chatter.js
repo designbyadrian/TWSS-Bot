@@ -10,10 +10,8 @@ module.exports = (slapp) => {
 
   slapp.message('.*', (msg) => {
 
-    console.log(twss.is(msg.body.event.text));
-    console.log(twss.prob(msg.body.event.text));
-
     if(twss.is(msg.body.event.text)) {
+      console.log(msg.body.event.text+": "+twss.prob(msg.body.event.text));
       msg.say("That's what she said!");
     }
 
