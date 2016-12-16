@@ -6,7 +6,7 @@ const twss = require('twss')
 
 module.exports = (slapp) => {
 
-  twss.threshold = 0.7;
+  twss.threshold = 0.75;
 
   slapp.message('.*', (msg) => {
 
