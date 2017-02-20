@@ -10,7 +10,12 @@ module.exports = (slapp) => {
 
   slapp.message('.*', (msg) => {
 
-    if(twss.is(msg.body.event.text)) {
+    const sentences = msg.body.event.text.split('.');
+    const lastSentence = sentences[sentences.length-1];
+    const sentenceParts = lastSentence.split(',');
+    const part = sentenceParts[sentenceParts.length-1];
+
+    if(twss.is(part)) {
       console.log(msg.body.event.text+": "+twss.prob(msg.body.event.text));
       msg.say("That's what she said!");
     }
